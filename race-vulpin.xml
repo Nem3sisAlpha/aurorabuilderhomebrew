@@ -52,7 +52,7 @@
 		</description>
 		<sheet display="false" />
 		<setters>
-			<set name="names" type="male">Kite, Yato, Viridian, Echo, Orion, Arthur, Haku</set>
+			<set name="names" type="male">Yato, Viridian, Echo, Orion, Arthur, Haku</set>
 			<set name="names" type="female">Erika, Yona, Vermillion, Song, Riley, Rin, Artemis</set>
 		</setters>
 		<rules>
