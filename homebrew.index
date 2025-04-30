@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Core</name>
+		<description>Content that was created by a possionate DM</description>
+		<author>Xavier Briand</author>
+		<update version="1.0">
+			<file name="homebrew.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core.index" />
+		</update>
+	</info>
+	<files>
+		<file name="homebrew-races.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide.index" />
+	</files>
+</index>
