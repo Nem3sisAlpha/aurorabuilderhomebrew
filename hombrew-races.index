@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Homebrew</name>
+		<description>Content that was created by a possionate DM</description>
+		<author>Xavier Briand</author>
+		<update version="1.0">
+			<file name="homebrew.index" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-vulpin.xml" />
+	</files>
+</index>
