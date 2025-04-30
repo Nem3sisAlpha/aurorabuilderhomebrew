@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilder_homebrew/refs/heads/main/races/race-vulpin.xml" />
+		<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilder_homebrew/refs/heads/main/races/race-kitsune.xml" />
 	</files>
 </index>
