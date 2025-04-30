@@ -5,7 +5,7 @@
 		<description>Provides the races that were not found in any of the content already available on the main GitHub page as well as some homebrewed ones</description>
 		<author>Xavier Briand</author>
 		<update version="1.0">
-			<file name="homebrew-races.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide.index" />
+			<file name="homebrew-races.index" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilder_homebrew/refs/heads/main/races/homebrew-races.index" />
 		</update>
 	</info>
 	<files>
