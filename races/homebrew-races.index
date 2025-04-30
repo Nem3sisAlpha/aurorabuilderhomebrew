@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide/source.xml" />
+		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilder_homebrew/refs/heads/main/races/race-vulpin.xml" />
 	</files>
 </index>
