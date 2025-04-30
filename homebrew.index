@@ -5,7 +5,7 @@
 		<description>Content that was created by a possionate DM</description>
 		<author>Xavier Briand</author>
 		<update version="1.0">
-			<file name="homebrew.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core.index" />
+			<file name="homebrew.index" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilder_homebrew/refs/heads/main/homebrew.index" />
 		</update>
 	</info>
 	<files>
