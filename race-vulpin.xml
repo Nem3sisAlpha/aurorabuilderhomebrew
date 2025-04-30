@@ -43,9 +43,9 @@
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_LANGUAGE_AARAKOCRA" />
       <grant type="Language" name="ID_LANGUAGE_VULPIN" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_KITSUNE_EVASIVE" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_KITSUNE_BITE" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_KITSUNE_BEWITCHING_GUILE" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_EVASIVE" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BITE" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BEWITCHING_GUILE" />
     </rules>
   </element>
   
@@ -58,7 +58,7 @@
 		</sheet>
   </element>
   
-   <element name="Bewitching Guile" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_KITSUNE_BEWITCHING_GUILE">
+   <element name="Bewitching Guile" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BEWITCHING_GUILE">
 		<description>You can cast Charm Person as a 1st level spell (1/long rest). (Intelligence)</description>
 		<description level="3">You can cast Charm Person as a 1st level spell. you can cast Ambush Prey as a 2nd level spel (1/long rest). (Charisma)</description>
 		<description level="5">You can cast Charm Person as a 1st level spell. you can cast Ambush Prey as a 2nd level spel and the fear spell (1/long rest). (Charisma)</description>
@@ -70,7 +70,7 @@
 		</rules>
   </element>
   
-   <element name="Bite" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_BITE">
+   <element name="Bite" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BITE">
     <supports />
     <description>
       <p>You can choose to bite as an unarmed strike that deals 1d6 points of piercing damage, which can be calculated using either your Strength or Dexterity modifier for both the attack roll and damage bonus.</p>
