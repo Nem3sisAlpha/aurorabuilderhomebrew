@@ -53,7 +53,7 @@
     <description>
 			<p>You add your Intelligence modifier as a bonus on all Dexterity saving throws.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="true">
 			<description>You add your Intelligence modifier as a bonus on all Dexterity saving throws.</description>
 		</sheet>
   </element>
