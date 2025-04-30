@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Hombrewed Races</name>
+		<description>Provides the races that were not found in any of the content already available on the main GitHub page as well as some homebrewed ones</description>
+		<author>Xavier Briand</author>
+		<update version="1.0">
+			<file name="homebrew-races.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide.index" />
+		</update>
+	</info>
+	<files>
+		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide/source.xml" />
+	</files>
+</index>
