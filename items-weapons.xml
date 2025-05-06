@@ -25,7 +25,7 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
-			<set name="name-format">{{parent}} of Wounding</set>
+			<set name="name-format">Celestial Shard</set>
 		</setters>
 	</element>
 
