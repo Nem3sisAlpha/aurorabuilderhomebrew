@@ -9,20 +9,24 @@
 		</update>
 	</info>
 
-  <element name="Amulet of the Beast" type="Magic Item" source="Homebrewed" id="ID_HMBW_MAGIC_ITEM_AMULET_OF_THE_BEAST">
+  	<element name="Amulet of the Beast" type="Magic Item" source="Homebrewed" id="ID_HMBW_MAGIC_ITEM_AMULET_OF_THE_BEAST">
 		<description>
 			<p>This amulet is crafted from polished bone, entwined with vines and set with a glowing emerald. Its aura hums with primal energy, and those who wear it claim to hear whispers of ancient beasts guiding their actions. The first amulet was said to be gifted by a fey guardian to a druid who sought to master their Wild Shape.</p>
-      <h3>Effects</h3>
-      <h4>Spellcasting in Wild Shape</h4>
-      <p class="indent">While in Wild Shape, you can still cast spells that don’t require material components.</p>
+      		<h3>Effects</h3>
+      		<h4>Spellcasting in Wild Shape</h4><br/>
+     		<p class="indent">While in Wild Shape, you can still cast spells that don’t require material components.</p>
 			<p class="indent">You retain your verbal and somatic spellcasting abilities, as if you were still in your humanoid form.</p>
-      <h4>Enhanced Transformation</h4>
-      <p class="indent">While in Wild Shape, you gain +1 AC and advantage on Perception checks based on hearing or smell.</p>
-      <h4>Primal Awakening (Once per Day)</h4>
-      <p class="indent">As a bonus action, you can extend your Wild Shape duration for an additional hour once per long rest.</p>
-      <h4>Beast's Resilience (<italic>Passive Bonus</italic>)</h4>
-      <p class="indent">While transformed, you gain resistance to non-magical bludgeoning, piercing, and slashing damage.</p>
-    </description>
+      		
+			<h4>Enhanced Transformation</h4><br/>
+      		<p class="indent">While in Wild Shape, you gain +1 AC and advantage on Perception checks based on hearing or smell.</p>
+      		
+			<h4>Primal Awakening (Once per Day)</h4><br/>
+      		<p class="indent">As a bonus action, you can extend your Wild Shape duration for an additional hour once per long rest.</p>
+      		
+			<h4>Beast's Resilience (<em>Passive Bonus</em>)</h4><br/>
+      		<p class="indent">While transformed, you gain resistance to non-magical bludgeoning, piercing, and slashing damage.</p>
+    	
+		</description>
 		<setters>
 			<set name="keywords">Wild Shape, Transformation</set>
 			<set name="category">Wondrous Items</set>
@@ -34,4 +38,36 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
+
+	<element name="Cloak of the Wildwalker" type="Magic Item" source="Homebrewed" id="ID_HMBW_MAGIC_ITEM_CLOAK_OF_THE_WILDWALKER">
+		<description>
+			<p>This cloak is woven from shadowy leaves, soft moss, and strands of moonlit spider silk. It is light as air, shifting its color to blend seamlessly into forests, grasslands, and even misty swamps. The first Wildwalkers were elven rangers and druids who patrolled the wilds, using magic to blend into their surroundings.</p>
+      		<h3>Effects</h3>
+      		<h4>Silent Step (<em>Passive Bonus</em>)</h4><br/>
+     		<p class="indent">You have advantage on Dexterity (Stealth) checks in natural environments (forests, jungles, hills, and wetlands).</p>
+      		
+			<h4>Forest’s Favor (<em>Passive Bonus</em>)</h4><br/>
+      		<p class="indent">You have advantage on Wisdom (Survival) checks related to tracking creatures, foraging, or navigating in natural terrain.</p>
+      		
+			<h4>Fade into the Wilds (1x per Long Rest)</h4><br/>
+      		<p class="indent">As a bonus action, you can become invisible for 1 minute while in a natural environment.</p>
+			<p class="indent">This effect ends if you attack or cast a spell.</p>
+      		
+			<h4>One with Nature (<em>Always ACtive</em>)</h4><br/>
+      		<p class="indent">Beasts and plants view you as neutral unless provoked.</p>
+			<p class="indent">You can pass through nonmagical plants without slowing down or taking damage.</p>
+		
+		</description>
+		<setters>
+			<set name="keywords">Wildwalker, Forest</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">2,500</set>
+			<set name="weight" lb="0">5 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
 </elements>

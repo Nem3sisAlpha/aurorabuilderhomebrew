@@ -5,116 +5,38 @@
 		<description></description>
 		<author>Xavier Briand</author>
 		<update version="1.0">
-			<file name="class-kitsune.xml" url=""/>
+			<file name="items-rings.xml" url=""/>
 		</update>
 	</info>
 
-  <element name="Vulpin" type="Race" source="Homebrew" id="ID_HMBRW_RACE_VULPIN">
-    <description>
-      <h4>APPEARANCE</h4>
-      <p>Vulpins are fox-like in appearance, with light builds and sharp fangs. One of the least understood and most often vilified humblefolk in the Wood, vulpins have earned a bad reputation that isn’t entirely deserved. Much of this stems from the fact that vulpins are ambitious. Sometimes their drive to succeed can make it difficult for them to empathize with others. Vulpins feel just as deeply as other folk of the Wood, but they possess a keen survival instinct which sometimes causes them to take courses of action that are selfish. Moreover, they are sharp and savvy, possessing an uncanny force of personality that allows them to easily sway the trust of others. In the right situations, vulpins can be true friends, and in the wrong ones, deadly enemies.</p>
-      <h4>Artful and Cunning</h4>
-      <p>Vulpins are naturally intelligent, rivalled only by corvums. However, where corvums are studious, vulpins are more creative. They enjoy the arts and the pursuit of leisure. Some devote their lives to mastering an art form; learning sculpture, poetry, or refined swordplay. Even though vulpins come from every walk of life, they also have a reputation for being snobbish and looking down on others. All vulpins have a natural connection to the magic of the Wood, though they channel it in specialized ways. The right look from a vulpin can bewitch or terrify, and vulpins who are truly skilled can command an entire room through sheer force of presence.</p>
-      <h4>Prodigeous Predators</h4>
-      <p>Before the Humblefolk Treaty was signed, vulpins controlled a large part of the Wood outside the influence of the birdfolk, and bands of vulpin raiders provided their own kin with a wealth of plundered goods at the expense of birdfolk and other humblefolk alike. Those days are long since gone, but the memory of the sinister vulpin has yet to fade from the minds of the humblefolk, who endured great suffering at their hands. A few vulpins have attempted to change public opinion, but the majority are unconcerned with their notoriety. Vulpins learn from a young age that they are of two natures: the sophisticated and the savage. While sophistication and elegance are generally preferred, it is considered common sense that vulpins should know when to keep their fangs hidden and when to bear them.</p>
-      <p>
-      <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 2, and Charisma scores increases by 1.<br/>
-      <span class="feature">Age.</span>Vulpins mature at an average pace, and can be comparatively long-lived. They reach adulthood at 15 years, and live well past 90 years (110 years on average).<br/>
-	  <span class="feature">Alignment</span>Vulpins aren’t innately evil, but their difficulty empathizing with others means they are only rarely good aligned. Most vulpins find strict authority distasteful, preferring chaotic alignments over lawful ones.<br/>
-      <span class="feature">Size.</span>Vulpins cut dashing figures and are usually lean and muscular. They stand between 4 and a half and 5 and a half feet tall, but are relatively lightweight, weighing between 90 and 140 pounds. Your size is Medium.<br/>
-      <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
-      <span class="feature">Darkvision.</span>Due to hunting at night you have superior vision in the dark. You can see dim light within 60 feet of you as bright light and in darkness as if it was in dim light. You can't discern color in darkness, only shades of grey.<br/>
-      <span class="feature">Bite.</span>You have sharp fangs that enable you to make natural bite attacks. You can choose to bite as an unarmed strike that deals 1d6 points of piercing damage, which can be calculated using either your Strength or Dexterity modifier for both the attack roll and damage bonus.<br/>
-	  <span class="feature">Bewitching Guile.</span>You can cast Charm Person as a 1st level spell with this trait, and regain the ability to do so when you finish a long rest. When you reach 3rd level, you can cast Ambush Prey as a 2nd level spell with this trait, and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast fear with this trait, and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.<br/>
-	  <span class="feature">Languages.</span>You can speak, read, and write Birdfolk and Vulpin.<br/>
-      </p>
-    </description>
-    <sheet display="false"/>
-    <supports />
-    <setters>
-      <set name="height" modifier="2d12">4 and a half to 5 and a half feet.</set>
-      <set name="weight" modifier="2d4">between 90 to 140 lb.</set>
-    </setters>
-    <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="charisma" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Vision" id="ID_VISION_DARKVISION" />
-      <grant type="Size" id="ID_SIZE_MEDIUM" />
-      <grant type="Language" id="ID_LANGUAGE_AARAKOCRA" />
-      <grant type="Language" name="ID_LANGUAGE_VULPIN" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_EVASIVE" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BITE" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BEWITCHING_GUILE" />
-    </rules>
-  </element>
-  
-   <element name="Evasive" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_EVASIVE">
-    <description>
-			<p>You add your Intelligence modifier as a bonus on all Dexterity saving throws.</p>
-		</description>
-		<sheet display="true">
-			<description>You add your Intelligence modifier as a bonus on all Dexterity saving throws.</description>
-		</sheet>
-  </element>
-  
-   <element name="Bewitching Guile" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BEWITCHING_GUILE">
-		<description>You can cast Charm Person as a 1st level spell (1/long rest). (Intelligence)</description>
-		<description level="3">You can cast Charm Person as a 1st level spell. you can cast Ambush Prey as a 2nd level spel (1/long rest). (Charisma)</description>
-		<description level="5">You can cast Charm Person as a 1st level spell. you can cast Ambush Prey as a 2nd level spel and the fear spell (1/long rest). (Charisma)</description>
-		<sheet display="false"/>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
-			<grant type="Spell" id="ID_HMBRW_SPELL_AMBUSH_PREY" level="3"/>
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5"/>
-		</rules>
-  </element>
-  
-   <element name="Bite" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BITE">
-    <supports />
-    <description>
-      <p>You can choose to bite as an unarmed strike that deals 1d6 points of piercing damage, which can be calculated using either your Strength or Dexterity modifier for both the attack roll and damage bonus.</p>
-    </description>
-    <sheet display="true">
-      <description>You can choose to bite as an unarmed strike that deals 1d6 points of piercing damage, which can be calculated using either your Strength or Dexterity modifier for both the attack roll and damage bonus.</description>
-    </sheet>
-  </element>
+  <element name="Ring of Natural Regeneration" type="Magic Item" source="Homebrewed" id="ID_HMBW_MAGIC_ITEM_RING_OF_NATURAL_REGENERATION">
+		<description>
+		  <p>This ring is crafted from living wood, with tiny vines and leaves that seem to shift and grow as it is worn. The centerpiece is a glowing green gem, pulsing faintly like a heartbeat. The ring was first created by an archdruid who sought to bind themselves to the cycle of life, allowing their body to recover just as the forest heals itself.</p>
+      <h3>Effects</h3>
+      <h4>Sunlight Regeneration (<em>Primary Ability</em>)</h4><br/>
+     	<p class="indent">While in direct sunlight, you regain 5 hit points per round (at the start of your turn).</p>
+			<p class="indent">This regeneration does not function if you have taken fire or necrotic damage in the last round.</p>
 
-  <element name="Ambush Prey" type="Spell" source="Homebrew" id="ID_HMBRW_SPELL_AMBUSH_PREY">
-    <supports>Ranger</supports>
-    <description>
-		<p>You channel primal predatory energies to perfectly conceal your presence in order to surprise your target. You become invisible for the spell’s duration, granting advantage on all Dexterity (Stealth) checks to remain hidden. The invisibility will last for the duration of the spell, however, moving 5 feet or more from your position when you cast the spell will end the effect.</p>
-		<br/>
-		<p>As long as you remain invisible, the first attack you make against any target who is unaware of your presence deals an additional 1d6 points of damage. This attack ends the spell.</p>
-		<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot above 2nd level, the damage of your first attack increases by 1d6 for every slot level above 2nd.</p>
-    </description>
-    <setters>
-      <set name="keywords">acid</set>
-      <set name="level">2</set>
-      <set name="school">Transmutation</set>
-      <set name="time">1 action</set>
-      <set name="duration">1 hour</set>
-      <set name="range">Self</set>
-      <set name="hasVerbalComponent">false</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">a broken twig</set>
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
-	
-  <element name="Vulpin" type="Language" source="Homebrew" id="ID_LANGUAGE_VULPIN">
-	<supports>Exotic</supports>
-	<description>
-		<p>Typically spoken by Vulpins.</p>
-	</description>
-	<setters>
-		<set name="exotic">true</set>
-		<set name="speakers">Vulpins</set>
-		<set name="script">Vulpin</set>
-	</setters>
-</element>
+      <h4>Druidic Vitality (<em>Passive Bonus</em>)</h4><br/>
+      <p class="indent">You have advantage on death saving throws.</p>
+      <p class="indent">You regain double the normal hit points from natural rest.</p>
+
+      <h4>Nature’s Recovery (Once per Day)</h4><br/>
+      <p class="indent">As a bonus action, you can regrow lost body parts (such as fingers, ears, or even a limb) over 1 minute.</p>
+      <p class="indent">This effect does not work on the dead, nor can it restore a severed head.</p>
+
+      <h4>Verdant Shield (Reaction, 2x per Long Rest)</h4><br/>
+      <p class="indent">When you take bludgeoning, slashing, or piercing damage, the ring summons a protective barkskin shield, granting you temporary hit points equal to half the damage taken.</p>
+
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
 
 
 </elements>
