@@ -5,11 +5,11 @@
 		<description></description>
 		<author>Xavier Briand</author>
 		<update version="1.0">
-			<file name="class-kitsune.xml" url=""/>
+			<file name="class-owlin.xml" url=""/>
 		</update>
 	</info>
 
-  <element name="Vulpin" type="Race" source="Homebrew" id="ID_HMBRW_RACE_VULPIN">
+  <element name="Owlin" type="Race" source="Homebrew" id="ID_HMBRW_RACE_OWLIN">
     <description>
       <h4>APPEARANCE</h4>
       <p>Vulpins are fox-like in appearance, with light builds and sharp fangs. One of the least understood and most often vilified humblefolk in the Wood, vulpins have earned a bad reputation that isn’t entirely deserved. Much of this stems from the fact that vulpins are ambitious. Sometimes their drive to succeed can make it difficult for them to empathize with others. Vulpins feel just as deeply as other folk of the Wood, but they possess a keen survival instinct which sometimes causes them to take courses of action that are selfish. Moreover, they are sharp and savvy, possessing an uncanny force of personality that allows them to easily sway the trust of others. In the right situations, vulpins can be true friends, and in the wrong ones, deadly enemies.</p>
@@ -36,85 +36,162 @@
       <set name="weight" modifier="2d4">between 90 to 140 lb.</set>
     </setters>
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="charisma" value="1"/>
+      <select type="Racial Trait" name="Ability Score Increase by 2 (Owlin)" supports="Owlin" />
+      <select type="Racial Trait" name="Ability Score Increase by 1 (Owlin)" supports="Owlin" />
       <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
-      <grant type="Language" id="ID_LANGUAGE_AARAKOCRA" />
-      <grant type="Language" name="ID_LANGUAGE_VULPIN" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_EVASIVE" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BITE" />
-      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BEWITCHING_GUILE" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <select type="Language" name="Language (Owlin)" supports="Standard||Exotic" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_OWLIN_FLIGHT" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_OWLIN_SILENT_FEATHERS" />
     </rules>
   </element>
-  
-   <element name="Evasive" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_EVASIVE">
-    <description>
-			<p>You add your Intelligence modifier as a bonus on all Dexterity saving throws.</p>
+
+  <element name="Flight" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_OWLIN_FLIGHT">
+		<description>
+			<p>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+  </element>  
+
+  <element name="Cat’s Talent" type="Racial Trait" source="Hombrew" id="ID_HMBRW_RACIAL_TRAIT_OWLIN_SILENT_FEATHERS">
+		<description>
+			<p>You have proficiency in the Stealth skill.</p>
 		</description>
 		<sheet display="true">
-			<description>You add your Intelligence modifier as a bonus on all Dexterity saving throws.</description>
+			<description>You have proficiency in the Stealth skill.</description>
 		</sheet>
-  </element>
-  
-   <element name="Bewitching Guile" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BEWITCHING_GUILE">
-		<description>You can cast Charm Person as a 1st level spell (1/long rest). (Intelligence)</description>
-		<description level="3">You can cast Charm Person as a 1st level spell. you can cast Ambush Prey as a 2nd level spel (1/long rest). (Charisma)</description>
-		<description level="5">You can cast Charm Person as a 1st level spell. you can cast Ambush Prey as a 2nd level spel and the fear spell (1/long rest). (Charisma)</description>
-		<sheet display="false"/>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
-			<grant type="Spell" id="ID_HMBRW_SPELL_AMBUSH_PREY" level="3"/>
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 		</rules>
-  </element>
+	</element>  
   
-   <element name="Bite" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_VULPIN_BITE">
-    <supports />
-    <description>
-      <p>You can choose to bite as an unarmed strike that deals 1d6 points of piercing damage, which can be calculated using either your Strength or Dexterity modifier for both the attack roll and damage bonus.</p>
-    </description>
-    <sheet display="true">
-      <description>You can choose to bite as an unarmed strike that deals 1d6 points of piercing damage, which can be calculated using either your Strength or Dexterity modifier for both the attack roll and damage bonus.</description>
-    </sheet>
-  </element>
-
-  <element name="Ambush Prey" type="Spell" source="Homebrew" id="ID_HMBRW_SPELL_AMBUSH_PREY">
-    <supports>Ranger</supports>
-    <description>
-		<p>You channel primal predatory energies to perfectly conceal your presence in order to surprise your target. You become invisible for the spell’s duration, granting advantage on all Dexterity (Stealth) checks to remain hidden. The invisibility will last for the duration of the spell, however, moving 5 feet or more from your position when you cast the spell will end the effect.</p>
-		<br/>
-		<p>As long as you remain invisible, the first attack you make against any target who is unaware of your presence deals an additional 1d6 points of damage. This attack ends the spell.</p>
-		<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot above 2nd level, the damage of your first attack increases by 1d6 for every slot level above 2nd.</p>
-    </description>
-    <setters>
-      <set name="keywords">acid</set>
-      <set name="level">2</set>
-      <set name="school">Transmutation</set>
-      <set name="time">1 action</set>
-      <set name="duration">1 hour</set>
-      <set name="range">Self</set>
-      <set name="hasVerbalComponent">false</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent">a broken twig</set>
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
-	
-  <element name="Vulpin" type="Language" source="Homebrew" id="ID_LANGUAGE_VULPIN">
-	<supports>Exotic</supports>
-	<description>
-		<p>Typically spoken by Vulpins.</p>
-	</description>
-	<setters>
-		<set name="exotic">true</set>
-		<set name="speakers">Vulpins</set>
-		<set name="script">Vulpin</set>
-	</setters>
-</element>
-
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_STRENGTH">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Strength score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_DEXTERITY">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Dexterity score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_CONSTITUTION">
+		<compendium display="false" />v
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Constitution score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Intelligence score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_WISDOM">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Wisdom score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="2"/>
+		</rules>
+	</element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_CHARISMA">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Charisma score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="2"/>
+		</rules>
+	</element>
+  
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_STRENGTH">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_DEXTERITY">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_CONSTITUTION">
+		<compendium display="false" />v
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_WISDOM">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_OWLIN_CHARISMA">
+		<compendium display="false" />
+		<supports>Owlin</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="1"/>
+		</rules>
+	</element>
 
 </elements>
