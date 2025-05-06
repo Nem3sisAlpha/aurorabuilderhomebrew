@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Homebrewed Wondrous Items</name>
+		<description></description>
+		<author>Xavier Briand</author>
+		<update version="1.0">
+			<file name="items-wondrous.xml" url=""/>
+		</update>
+	</info>
+
+  <element name="Amulet of the Beast" type="Magic Item" source="Homebrewed" id="ID_HMBW_MAGIC_ITEM_AMULET_OF_THE_BEAST">
+		<description>
+			<p>This amulet is crafted from polished bone, entwined with vines and set with a glowing emerald. Its aura hums with primal energy, and those who wear it claim to hear whispers of ancient beasts guiding their actions. The first amulet was said to be gifted by a fey guardian to a druid who sought to master their Wild Shape.</p>
+      <h3>Effects</h3>
+      <h4>Spellcasting in Wild Shape</h4>
+      <p class="indent">While in Wild Shape, you can still cast spells that don’t require material components.</p>
+			<p class="indent">You retain your verbal and somatic spellcasting abilities, as if you were still in your humanoid form.</p>
+      <h4>Enhanced Transformation</h4>
+      <p class="indent">While in Wild Shape, you gain +1 AC and advantage on Perception checks based on hearing or smell.</p>
+      <h4>Primal Awakening (Once per Day)</h4>
+      <p class="indent">As a bonus action, you can extend your Wild Shape duration for an additional hour once per long rest.</p>
+      <h4>Beast's Resilience (<italic>Passive Bonus</italic>)</h4>
+      <p class="indent">While transformed, you gain resistance to non-magical bludgeoning, piercing, and slashing damage.</p>
+    </description>
+		<setters>
+			<set name="keywords">Wild Shape, Transformation</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">5,000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+</elements>
