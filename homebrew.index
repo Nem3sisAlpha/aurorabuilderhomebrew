@@ -11,5 +11,9 @@
 	<files>
 		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-vulpin.xml" />
 		<file name="race-ownlin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-owlin.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/items-wondrous.xml" />
+		<!-- <file name="items-weapons.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/items-weapons.xml" /> -->
+		<!-- <file name="items-staffs.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/items-staffs.xml" /> -->
+		<!-- <file name="items-rings.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/items-rings.xml" /> -->
 	</files>
 </index>
