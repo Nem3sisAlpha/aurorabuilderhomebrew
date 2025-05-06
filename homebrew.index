@@ -10,5 +10,6 @@
 	</info>
 	<files>
 		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-vulpin.xml" />
+		<file name="race-ownlin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-owlin.xml" />
 	</files>
 </index>
