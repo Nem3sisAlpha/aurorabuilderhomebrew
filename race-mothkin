@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mothkin</name>
+		<description></description>
+		<author>Xavier Briand</author>
+		<update version="1.0">
+			<file name="class-owlin.xml" url=""/>
+		</update>
+	</info>
+
+  <element name="Mothkin" type="Race" source="Homebrew" id="ID_HMBRW_RACE_MOTHKIN">
+    <description>
+      <h4>APPEARANCE</h4>
+      <p>Mothkin are moth-like humanoids adorned with fur, antennae, and finely scaled wings. Though they tend to be small, some subraces are comparable in size to larger races like humans and orcs.
+      They can be nearly any color, and have an equally wide variety of patterns on their wings. Although most colorings developed over several generations to provide camouflage, many mothkin take great pride in dyeing new, decorative patterns into their wings.
+      However, even mothkin with more subtle natural coloring can still possess intricate and beautiful patterns on their wings. Their wings come in many shapes and sizes and may have long tails. These tails do not affect their flight abilities at all, instead existing solely to provide a distraction to predators.
+      Most Mothkin cannot fly when wet. Most mothkin possess feathery antennae, but some may more closely resemble the clubbed antennae of butterflies. They generally have compound eyes which take up a considerable portion of their faces, providing them with darkvision at the expense of reduced resolution.</p> 
+	    <h4>HISTORY</h4>
+      <p>Mothkin are believed to have a common ancestor, Ibuluna Mori. Her story has become increasingly inconsistent throughout time, leaving the origins of their race a mystery. The most prevalent of these stories depicts her as a goddess who grew dissatisfied with the many conflicts between not only the gods, but the mortals they ruled over too.
+      She took solace in Eiovini, the goddess of dawn, who shared her belief that neutrality is true bliss and being purely either good or evil leads to anger and sadness. One-day they both agreed to give up divinity for a simple life together as mortals, dividing their lost powers across the population of their favorite beings within the mortal realm as a final blessing.
+      These beings would later evolve into mothkin (Through the power of Ibuluna's blessing) and spiderkin (Through Eiovini's blessing). Mothkin have existed ever since for generations, mostly hiding away in deep forests, cave systems, or other environs that are far from wider society. Because of this, they have been largely unknown to outsiders for much of history.</p>
+    <p>
+      <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2<br/>
+      <span class="feature">Age.</span>Mothkin reach adulthood at around the age of 15, and live for around 70 to 80 years. They age drastically faster in the final few years of their lives.<br/>
+      <span class="feature">Mothkin are often neutral in nature. They tend to keep to themselves and avoid meddling unnecessarily in the business of others.<br/>
+      <span class="feature">Size.</span>The average mothkin is 3 to 6 feet in height, and between 80 and 180 pounds. Your size is Medium or Small.<br/>
+      <span class="feature">Speed.</span>Your base walking speed is 30 feet<br/>
+      <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+      <span class="feature">Flight.</span>Thanks to your wings, you have a flying speed equal to half your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.<br/>
+	    <span class="feature">One with Nature.</span>As Mothkin tend to be heavily involved in the natural world, you have proficiency with the Survival skill.<br/>
+      <span class="feature">Accute Senses.</span>Because of their Antennaes, Mothkins tend to be more perceptive. You have proficiency with the Perception skill<br/>
+	    <span class="feature">Languages.</span>You can speak, read, and write Common and Slyvan.<br/>
+    </p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters>
+      <set name="height" modifier="2d12">4 and a half to 5 and a half feet.</set>
+      <set name="weight" modifier="2d4">between 90 to 140 lb.</set>
+    </setters>
+    <rules>
+      <stat name="dexterity" value="2"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_MOTHKIN_FLIGHT" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_MOTHKIN_ONE_WITH_NATURE" />
+      <grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_MOTHKIN_ACCUTE_SENSES" />
+    </rules>
+  </element>
+
+  <element name="Flight" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_OWLIN_FLIGHT">
+		<description>
+			<p>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed equal to hal your walking speed. To use this speed, you can’t be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="15" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+  </element>  
+
+
+
+</elements>
