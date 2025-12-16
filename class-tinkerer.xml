@@ -166,7 +166,7 @@
 	
 	<element name="Create Contraption" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_CREATECONTRAP">
 		<description>
-			<p>(5 tinker points, 2lbs Material) </br>
+			<p>(5 tinker points, 2lbs Material) <br/>
 			At 3rd level, You create a small, handheld contraption with a range of 60 feet with a random effect decided by a d8 roll. The DC for all saves is determined by your Intelligence. The contraption can be cobbled together or pre-built. It takes an action to cobble together a contraption and a bonus action to throw it.</p>
 
 		</description>
