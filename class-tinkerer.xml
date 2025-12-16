@@ -116,7 +116,7 @@
 			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_TINKERING" id= level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_TINKERING" level="1"/>
 		</rules>
 		<sheet action="Bonus Action">
 			<description>You have {{tinker-points}} Tinker Points that you can use to create objects, weapons or constructs that could affect an entire encounter</description>
@@ -138,7 +138,7 @@
 			<p>You can give yourself and others an extra d4 in any ability check, saving throw or attack roll. You can use this feature a number of times equal to half your level in this class, and regain your uses after completing either a short or long rest. The Inspire geniality die grows to a d6 at the 5th level, a d8 at the 11th level, and a d10 at the 17th level.</p>
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_INSPIREGENIALITY" id= level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_INSPIREGENIALITY" level="1"/>
 		</rules>
 	</element>
 	
@@ -149,7 +149,7 @@
 
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" id= level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" level="2"/>
 		</rules>
 	</element>
 	
@@ -160,18 +160,18 @@
 
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" id= level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" level="2"/>
 		</rules>
 	</element>
 	
-	<element name="Create Contraption" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV">
+	<element name="Create Contraption" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_CREATECONTRAP">
 		<description>
 			<p>(5 tinker points, 2lbs Material) </br>
 			At 3rd level, You create a small, handheld contraption with a range of 60 feet with a random effect decided by a d8 roll. The DC for all saves is determined by your Intelligence. The contraption can be cobbled together or pre-built. It takes an action to cobble together a contraption and a bonus action to throw it.</p>
 
 		</description>
 		<rules>
-			<grant type="Class Feature" "ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" id= level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CREATECONTRAP" level="2"/>
 		</rules>
 	</element>
 	+
