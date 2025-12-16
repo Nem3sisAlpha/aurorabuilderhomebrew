@@ -175,7 +175,7 @@
 		</rules>
 	</element>
 	+
-	<table class="class-features">
+	<table class="class-features_roll">
 				<thead>
 					<tr><td class="col-5">Roll</td><td class="left">Features</td></tr>
 				</thead>
