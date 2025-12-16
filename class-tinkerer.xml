@@ -174,7 +174,6 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CREATECONTRAP" level="2"/>
 		</rules>
 	</element>
-	+
 	<table class="class-features_roll">
 				<thead>
 					<tr><td class="col-5">Roll</td><td class="left">Features</td></tr>
