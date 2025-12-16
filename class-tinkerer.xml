@@ -5,7 +5,7 @@
 		<description>The Homebrewed Tinkerer's class</description>
 		<author>Xavier Briand</author>
 		<update version="0.3.7">
-			<file name="class-tinkerer.xml" url=""/>
+			<file name="class-tinkerer.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/class-tinkerer.xml"/>
 		</update>
 	</info>
 
