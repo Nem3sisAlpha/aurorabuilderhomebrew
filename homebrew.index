@@ -2,13 +2,14 @@
 <index>
 	<info>
 		<name>Homebrew</name>
-		<description>Content that was created by a possionate DM</description>
+		<description>Content that was created by a passionate DM</description>
 		<author>Xavier Briand</author>
 		<update version="1.0">
 			<file name="homebrew.index" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/homebrew.index" />
 		</update>
 	</info>
 	<files>
+		<file name="class-tinkerer.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/class-tinkerer.xml" />
 		<file name="race-vulpin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-vulpin.xml" />
 		<file name="race-ownlin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-owlin.xml" />
 	<!--	<file name="race-mothkin.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/race-owlin.xml" />	-->
