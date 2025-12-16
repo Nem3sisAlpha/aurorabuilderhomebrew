@@ -67,9 +67,13 @@
 				<tr><td>19th</td><td>+6</td><td>24</td><td class="left">Ability Score Improvement, Imitation (Masterful)</td></tr>
 				<tr><td>20th</td><td>+6</td><td>25</td><td class="left">Enchant Tier 5 (full)</td></tr>
 			</table>
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_TINKERING" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_SPECIALIZATION" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER" />
+			<div element="ID_HB_CLASS_FEATURE_TINKERING" />
+			<!-- <div element="ID_HB_CLASS_FEATURE_SPECIALIZATION" /> -->
+			<div element="ID_HB_CLASS_FEATURE_INSPIREGENIALITY" />
+			<div element="ID_HB_CLASS_FEATURE_PRACTICALIMPROV" />
+			<div element="ID_HB_CLASS_FEATURE_UNCOMMONKNOW" />
+			<div element="ID_HB_CLASS_FEATURE_CREATECONTRAP" />
+			
 		</description>
 		<sheet display="false">
 			<description>A master craftsman, using every material known to humanoids to creates tools and weapons to aid in their tasks</description>
@@ -126,7 +130,7 @@
 		</rules>
 	</element>
 	
-	<element name="Inspire Genialty" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_INSPIREGENIALITY">
+	<element name="Inspire Genialty" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_INSPIREGENIALITY">
 		<description>
 			<h4>Inspire Genialty</h4>
 			<p>Tinkerers can use their brilliance to grant themselves and others a better chance to succeed at tasks. You can use this in the following ways:</p>
@@ -138,40 +142,40 @@
 			<p>You can give yourself and others an extra d4 in any ability check, saving throw or attack roll. You can use this feature a number of times equal to half your level in this class, and regain your uses after completing either a short or long rest. The Inspire geniality die grows to a d6 at the 5th level, a d8 at the 11th level, and a d10 at the 17th level.</p>
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_INSPIREGENIALITY" level="1"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_INSPIREGENIALITY" level="1"/>
 		</rules>
 	</element>
 	
-	<element name="Practical Improvisation" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV">
+	<element name="Practical Improvisation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_PRACTICALIMPROV">
 		<description>
 			<h4>Practical Improvisation</h4>
 			<p>when reaching level 2, A Tinkerer can turn anything into a deadly weapon using their wits and creative prowess. You gain proficiency with all improvised weapons for 1 hour and can add half of your proficiency bonus (rounded down) to any ability check or saving throw once every short or long rest. The player must use this ability before they know if the roll succeeds or fails. At full potential, a tinkerer may use their Intelligence modifier for attack rolls made with improvised weapons. They can also use this to gain proficiency with improvised tools (improvising a lockpick out of a toothpick etc).</p>
 
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_PRACTICALIMPROV" level="2"/>
 		</rules>
 	</element>
 	
-	<element name="Uncommon Knowledge" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV">
+	<element name="Uncommon Knowledge" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_UNCOMMONKNOW">
 		<description>
 			<h4>Uncommon Knownledge</h4>
 			<p>At 2nd level, A Tinkerer has spent years experimenting and researching, they know many weird and wonderful things. You can add half your proficiency bonus to a skill check that uses Intelligence. Lasts one hour and does not stack upon itself.</p>
 
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PRACTICALIMPROV" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_UNCOMMONKNOW" level="2"/>
 		</rules>
 	</element>
 	
-	<element name="Create Contraption" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_CREATECONTRAP">
+	<element name="Create Contraption" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CREATECONTRAP">
 		<description>
 			<p>(5 tinker points, 2lbs Material)</p> <br/>
 			<p>At 3rd level, You create a small, handheld contraption with a range of 60 feet with a random effect decided by a d8 roll. The DC for all saves is determined by your Intelligence. The contraption can be cobbled together or pre-built. It takes an action to cobble together a contraption and a bonus action to throw it.</p>
 
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CREATECONTRAP" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CREATECONTRAP" level="2"/>
 		</rules>
 	</element>
 	<table class="class-features_roll">
@@ -187,6 +191,23 @@
 				<tr><td> 7 </td><td class="left">Dismantle, Enchant Tier 1 (full)</td></tr>
 				<tr><td> 8 </td><td class="left">Ability Score Improvement, Construct Tier 1</td></tr>
 			</table>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_HB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Tinkerer 4)" supports="Improvement Option,Tinkerer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Tinkerer 6)" supports="Improvement Option,Tinkerer,6" level="6" />
+			<select type="Class Feature" name="Improvement Option (Tinkerer 8)" supports="Improvement Option,Tinkerer,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Tinkerer 12)" supports="Improvement Option,Tinkerer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Tinkerer 14)" supports="Improvement Option,FTinkerer,14" level="14" />
+			<select type="Class Feature" name="Improvement Option (Tinkerer 16)" supports="Improvement Option,Tinkerer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Tinkerer 19)" supports="Improvement Option,Tinkerer,19" level="19" />
+		</rules>
+	</element>
 
 	
 </elements>
