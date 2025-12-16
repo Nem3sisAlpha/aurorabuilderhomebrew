@@ -5,7 +5,7 @@
 		<description>The Homebrewed Tinkerer's class</description>
 		<author>Xavier Briand</author>
 		<update version="0.3.7">
-			<file name="class-tinkerer.xml"/>
+			<file name="class-tinkerer.xml" url=""/>
 		</update>
 	</info>
 
