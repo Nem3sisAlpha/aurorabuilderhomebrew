@@ -209,5 +209,269 @@
 		</rules>
 	</element>
 
+	<element name="Specialization" type="Class Feature" source="Homebrewed" id="ID_HB_CLASS_FEATURE_SPECIALIZATION">
+		<description>
+			<p>At the Third level you have discovered your expertise in enchanting or engineering, you can choose The Enchanter Path or Engineer Path.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Special Expertise" name="Specialization" supports="Specialization" level="3" />
+		</rules>
+	</element>
+	
+	<element name="Enchanter" type="Special Expertise" source="Hombrewed" id="ID_HB_SPECIALIZATION_ENCHANTER">
+		<supports>Specialization</supports>
+		<description>
+			<p>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.</p>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_ENCHANTINGITEMS"/>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_LEARNARCANE"/>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_IMITATION"/>
+		</description>
+		<sheet display="false">
+			<description>As a tinkerer, you know very little magic and can cast even less. Your magical strength lies in imbuing items with magic and using them as a focus for your spells. When creating your character, roll 1d4 multiplied by your tinkerer level. The total number you get is the number of cantrip wizard spells you can enchant with. Divide that number by two to get the number of level 1 spells you already know. Continue to divide in half for spells with a casting level less than or equal to your enchanting tier.</description>
+		</sheet>
+		<rules>
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_ENCHANTINGITEMS" level="3" />
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_LEARNARCANE" level="3" />
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_IMITATION" level="15" />
+		</rules>
+	</element>
+	
+	<element name="Enchanting Items" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_ENCHANTINGITEMS">
+		<description>
+			<p>During a short rest using tinker points equal to the spell level + 1, you may enchant one lesser tier item. During a long rest, you may either enchant two lesser tier items or one full tier item. The spell save and spell attack damage are equal to that of your own at the time of enchanting. If you are enchanting an item at your max tier level, roll 1d8. On a 1, the item is cursed. The curse is determined with a d4 roll:</p>
+			<p><i>helms, goggles, glasses, necklaces, light armor, medium armor, heavy armor, gauntlets, gloves, rings, bracelets, belts, boots, simple weapons, martial weapons, shields, ammo, wands, clockwork devices, and staffs (using ordinary household objects can be allowed if agreed with the DM)</i> are all items that can be enchanted</p>
+		
+			<table class="enchant_curse_roll">
+				<thead>
+					<tr><td class="col-5">Roll</td><td class="left">Result</td></tr>
+				</thead>
+				<tr><td> 1 </td><td class="left">The item disintegrates immediately and tinker points spent are lost till the next short or long rest.</td></tr>
+				<tr><td> 2 </td><td class="left">The item is bound to the next person to equip it. If the item is unequipped, the enchantment is lost.</td></tr>
+				<tr><td> 3 </td><td class="left">The item is left intact, but the enchantment is lost.</td></tr>
+				<tr><td> 4 </td><td class="left">The item gives the user a “pins and needles feeling.</td></tr>
+			</table>
+			
+		<h4>Lesser Tiers:</h4>
+		<p>Only one lesser tier enchantment may be placed on an item and the item cannot have been previously enchanted. You must succeed an Intelligence check based on GM discretion. Enchantments can either be passive (background effects) or active (triggered via an action) but cannot be both.</p>
+		<h4>Full Tiers:</h4>
+		<p>Unlocking a full tier allows you to add multiple enchantments to a single item. This could mean either: the same spell is applied to an item but in both its active and passive forms, OR multiple spells of the same form are applied to a single item. If multiple enchantments are applied, their combined spell levels must be less than or equal to your enchantment tier level. How these enchantments work with each other is for you to decide, however, your GM has a veto over what can and cannot be done. Each enchantment requires its own intelligence check. If one Intelligence check fails, the others remain unaffected. The item cannot have any previous enchantments on it.</p>
+		<h4>Resulting Items:</h4>
+		<p>Active enchantments require charges, with each cast using 1 charge per spell level (Cantrip level spells, do not use charges). If the item has an active enchantment, you can take an action to recharge it with a ratio of one tinker point per charge. During enchantment, you may use up to your tinkerer level of extra tinker points to: improve your Intelligence check and/or additional charges.</p>
+
+		</description>
+		<sheet>
+			<description>For a short rest, you may spend tinker points equal to the spell level +1 to enchant one lesser tier item. On a long rest, you can do two lesser tier or one full tier item. Spell save and attack are equal to that of your own at the time of enchanting. If you're enchanting at you max tier level, roll a d8. On a 1, the item is cursed and you need to roll a d4 to determine the curse</description>
+		</sheet>
+
+	</element>
+	
+	<element name="Learn Arcane" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_LEARNARCANE">
+		<description>
+			<p><i>(tinker points = spell level + 1)</i></p>
+			<p>During a long rest, you can take an action to learn a spell from a spell scroll, a spell book, an enchanted item, or a potion. You must succeed an Arcana check with a DC of 10 + spell level. You learn this spell/enchantment permanently and can be used for enchanting. You can only learn spells with a spell level less than or equal to your enchantment tier. The spell scroll is consumed upon completion.</p>
+		</description>
+		<sheet>
+			<description>During a long rest, you can take an action to learn a spell from a spell scroll, a spell book, an enchanted item, or a potion. You must succeed an Arcana check with a DC of 10 + spell level. You learn this spell/enchantment permanently and can be used for enchanting. You can only learn spells with a spell level less than or equal to your enchantment tier. The spell scroll is consumed upon completion.</description>
+		</sheet>
+	</element>
+	
+	<element name="Imitation" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_IMITATION">
+		<description>
+			<p>At level 15, As you experiment more with the Arcane, you begin to recognise patterns and begin understanding the formations of spells. You can now break down spells just from witnessing others use them.</p>
+			<p>When you witness a spell being cast, you may take an action to copy that spell. You must have something to write the spell down on (blank parchment) for you to study and learn later. You must also succeed on an Intelligence check greater than twice that of the spell’s level. When skilled, skip the Intelligence check. When masterful, copy the spell immediately.</p>
+		</description>
+		<sheet>
+			<description>When you witness a spell being cast, you may take an action to copy that spell. You must have something to write the spell down on (blank parchment) for you to study and learn later. You must also succeed on an Intelligence check greater than twice that of the spell’s level. When skilled, skip the Intelligence check. When masterful, copy the spell immediately.</description>
+		</sheet>
+	</element>
+	
+	
+	<element name="Engineer" type="Special Expertise" source="Hombrewed" id="ID_HB_SPECIALIZATION_ENGINEER">
+		<supports>Specialization</supports>
+		<description>
+			<p>You enjoy and have the talent for creating odd and intricate items</p>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_KEENEYE"/>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_CLOCKWORK_FIDDLING_INDEX"/>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT1"/>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT2"/>
+			<div element="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT3"/>
+		</description>
+		<sheet display="false">
+			<description>You enjoy and have the talent for creating odd and intricate items</description>
+		</sheet>
+		<rules>
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_KEENEYE" level="4"/>
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_CLOCKWORK_FIDDLING_INDEX" level="4"/>
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT1" level="8"/>
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT2" level="12"/>
+			<grant type="Specialization Feature" id="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT3" level="17"/>
+		</rules>
+	</element>
+	<element name="Keen Eye" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_KEENEYE">
+		<description>
+			<p>At the fourth level, you can tell where traps are and if you roll a perception roll or DC12 Int check to learn how the trap works and how to disarm it</p>
+		</description>
+		<sheet>
+			<description>At the fourth level, you can tell where traps are and if you roll a perception roll or DC12 Int check to learn how the trap works and how to disarm it</description>
+		</sheet>
+	</element>
+	<element name="Clockwork Fiddling Index" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_CLOCKWORK_FIDDLING_INDEX">
+		<description>
+			<p>At 4th level, you get to learn how to do a handful of contraptions. The more you level up, the more complicated they will get</p>
+			
+			<h4>Timer</h4>
+			<p><i>(1 tinker point, 2lbs Materials)</i></p>
+			<p>Small Clockwork timer, that vibrates once duration (up to 12 hours) is reached.</p>
+			
+			<h4>Clockwork Toy</h4>
+			<p><i>(2 tinker points, 2lbs Materials)</i></p>
+			<p>A clockwork animal, monster, or person. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises to imitate the creature it represents.</p>
+			
+			<h4>Music Box</h4>
+			<p><i>(2 tinker points, 2lbs Materials)</i></p>
+			<p>When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed.</p>
+			
+			<h4>Fire Starter</h4>
+			<p><i>(3 tinker points, 2lbs Materials)</i></p>
+			<p>The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.</p>
+			
+			<h4>Explosive Toy</h4>
+			<p><i>(8 tinker points, 2lbs Materials)</i></p>
+			<p>When placed on the ground, the toy moves 5 feet across the ground for 3 turns in a random direction before exploding. Creatures within 5ft take 1d8 fire on failed DEX save.</p>
+			
+			<h4>Noise Maker</h4>
+			<p><i>(9 tinker points, 2lbs Materials)</i></p>
+			<p>When activated, creates a loud noise to be used as a distraction (INT save). Can imitate any known creature Large or smaller, as well as natural sounds like thunder.</p>
+			
+			<h4>Clockwork Blowgun</h4>
+			<p><i>(10 tinker points, 2lbs Materials)</i></p>
+			<p>A small brass pipe with a trigger can shoot improvised small ammunition up to 25ft (25/100) for 1d4 bludgeoning. Clockwork Scope can be attached.</p>
+			
+			<h4>Clockwork Lock</h4>
+			<p><i>(10 tinker points, 2lbs Materials)</i></p>
+			<p>An improvised mechanical lock can be attached to doors, chests, etc. Attempts to open must make checked against DC Intelligence.</p>
+			
+			<h4>Grapple Arrow/Bolt</h4>
+			<p><i>(12 tinker points, 2lbs Materials)</i></p>
+			<p>An arrow or bolt containing a rope bolo device. On impact, the target creature becomes grappled on a failed DEX save.</p>
+			
+			<h4>Explosive Arrow/Bolt</h4>
+			<p><i>(12 tinker points, 2lbs Materials)</i></p>
+			<p>An arrow or bolt containing an explosive device. On impact, they deal 2d4 fire damage on a failed DEX save.</p>
+			
+			<h4>Water Arrow/Bolt</h4>
+			<p><i>(12 tinker points, 2lbs Materials)</i></p>
+			<p>An arrow or bolt containing a vessel of water. The targeted creature becomes vulnerable to lightning damage and resistant to fire damage on a failed DEX save, or just wet on a successful one.</p>
+			
+			<h4>Oil Arrow/Bolt</h4>
+			<p><i>(12 tinker points, 2lbs Materials)</i></p>
+			<p>An arrow or bolt containing a vessel of oil. The targeted creature becomes vulnerable to fire damage on a failed DEX save.</p>
+			
+			<h4>Shrapnel Arrow/Bolt</h4>
+			<p><i>(14 tinker points, 2lbs Materials)</i></p>
+			<p>An arrow or bolt containing an explosive device. On impact, they deal 2d6 piercing damage on a failed DEX save.</p>
+			
+			<h4>Clockwork Scope</h4>
+			<p><i>(14 tinker points, 2lbs Materials)</i></p>
+			<p>A mechanical telescopic lens, which can be attached to any ranged ammunition-based weapon (bow, crossbow, etc). Increases range by 20ft. Also gives an advantage to perception checks.</p>
+			
+			<h4>Clockwork Spiders</h4>
+			<p><i>(18 tinker points, 2lbs Materials)</i></p>
+			<p>A cluster of 8 mechanical spiders. Each spider has an AC of 6, 1 HP, 10ft speed, and a bite attack of 1d4 piercing damage. Must move together as a group.</p>
+			
+			<h4>Clockwork Crossbow</h4>
+			<p><i>(24 tinker points, 2lbs Materials)</i></p>
+			<p>A small brass crossbow can shoot bolts up to 100ft (100/320) for 1d12 piercing. Clockwork Scope can be attached.</p>
+			
+			<h4>Clockwork Shotgun</h4>
+			<p><i>(40 tinker points, 2lbs Materials)</i></p>
+			<p>A small brass device with a barrel and ignition chamber can shoot gunpowder buckshot up to 30ft (30/60) for 4d6 piercing + 1d6 fire damage. Clockwork Scope can be attached. In addition, 10 shots of Gunpowder Buckshot can be made with 1lbs Gunpowder/Blackpowder and 2lbs material (metal).</p>
+			
+		</description>
+	</element>
+	
+	<element name="Contruct Tier 1" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT1">
+		<description>
+			<p>During your next long rest, you can create what is known as an “Iron Pup.” You must use 3lbs of Materials and 7 tinker points to create a tiny construct in the shape of a mechanical puppy that has 13 AC, 15 HP, a speed of 25ft, a Strength score of 8, and a bite attack that deals 1d4 + 1 points of piercing damage. It is immune to poison and psychic damage, as well as diseases. It is resistant to cold, fire, force, radiant, and necrotic damage. It is vulnerable to piercing and lightning damage. It has mechanical lungs so it does require air to breathe. Only its creator can control it and it can’t be persuaded to go against a command its creator gives it.</p>
+			<p>It can perform a few simple commands like fetching a given object, holding open a door, or flipping a switch. Other tasks can be negotiated with the GM. Only one construct can be active at a time.</p>
+		</description>
+
+	</element>
+	
+	<element name="Contruct Tier 2" type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT2">
+		<description>
+			<p>During your next short or long rest, you can upgrade your construct using 5 lbs of metal and 10 tinker points. It is now a medium construct and can take on one of two variants:</p>
+			
+			<h4>Iron defender</h4>
+			<p>
+				AC = 18
+				HP = 30
+				Speed = 35 ft
+				Strength = 15
+				Bite Attack = 2d6 + 4 piercing
+				Claw Attack = 2d6 + 2 slashing
+			</p>
+			<h4>Commands:</h4>
+			<p>Protect - Construct protects you or another creature as a bonus action. When within 5ft, the selected creature’s AC increases by 2. When the creature moves, it follows as far as its movement speed will allow it. When another creature attacks the selected creature, the construct makes a bite attack as a reaction. When another creature disengages from the selected creature, the construct takes an attack of opportunity as well.</p>
+			<p>Heal - Construct heals you or another creature for 1d8 + 2 hit points as an action (can be used twice per short rest). The defender must be within 5ft of the target and uses 5 of your tinker points.</p>
+			<h4>Emotional Connection:</h4>
+			<p>If you are damaged, the construct stops its action to come to your aid and uses its reaction to either heal or bite your attacker.</p>
+			
+			<h4>Iron Hound</h4>
+			<p>
+				AC = 18
+				HP = 30
+				Speed = 35 ft
+				Strength = 15
+				Bite Attack = 2d6 + 4 piercing
+				Claw Attack = 2d6 + 2 slashing
+			</p>
+			<h4>Commands:</h4>
+			<p>Attack - Construct attacks a target creature of choice. It deals both a claw and bite attack with an advantage if it doesn’t have to move to the target. It does not have an advantage if the hound has to move to attack, but still multi-attacks.</p>
+			<p>Scout - Construct scouts ahead of you up to their movement speed before returning. Upon returning, it projects an image of what it saw using 5 of your tinker points.</p>
+			<h4>Emotional Connection:</h4>
+			<p>If you are damaged, the construct stops its action to come to your aid and uses its reaction to both bites and claw your attacker.</p>
+			<p>As well as affecting the construct’s reaction in battle emotional connection affects you. If the construct is destroyed, you have a disadvantage on each proceeding roll equal to the number of days your construct was active. You also immediately lose as many tinkers' points equal to the number of days they were active and cannot make a new construct until half of those days have passed.</p>
+			
+		</description>
+	</element>
+	
+	<element name="Contruct Tier " type="Specialization Feature" source="Homebrewed" id="ID_HB_SPECIALIZATION_FEATURE_CONSTRUCTT3">
+		<description>
+			<p>During your next short or long rest, you can upgrade your tier 2 construct using 10 lbs of metal and 10 tinker points. Your construct takes on one of two variants:</p>
+			
+			<h4>Iron Bastion (from Defender)</h4>
+			<p>
+				AC = 20
+				HP = 60
+				Speed = 60 ft
+				Strength = 19
+				Bite Attack = 4d6 + 4 piercing
+				Claw Attack = 3d6 + 2 slashing
+				1 Level 1 spell slot, which can be used as an action for 5 tinker points
+			</p>
+			<h4>Commands:</h4>
+			<p>Protect - (same as tier 2)</p>
+			<p>Heal - (same as tier 2)</p>
+			<p>Change Form - For 15 tinker points, the construct increases in size to become a large creature of the same shape. It takes on the stats and feats of the “shield guardian” creature including movement speed and excluding bound. The spell it has stored is the same one you gave it when upgrading your defender to tier 3. It remains under your control but has its own turn which follows yours.</p>
+			<p>Once you’ve commanded it to change the form, you can take a bonus action to mount it. This makes you both invulnerable to melee attacks and unable to make them yourself unless the creature is flying. You can move your bastion on your turn or its turn, but not both. It returns to its tier 2 form after 5 rounds of combat and must be upgraded to tier 3 again.</p>
+
+			<h4>Iron Defiler (from Hound)</h4>
+			<p>
+				AC = 18
+				HP = 130
+				Speed = 65
+				Strength = 21
+				Bite Attack = 4d8 + 4 piercing
+				Claw Attack = 3d8 + 4 slashing
+			</p>
+			<h4>Commands:</h4>
+			<p>Attack - (same as tier 2)</p>
+			<p>Scout - (same as tier 2)</p>
+			<p>Change Form - For 15 tinker points, the construct stands on its hind legs and increases in size to become a large creature. It takes on the abilities and feats of the “iron golem” creature including movement speed. It remains under your control but has its own turn which follows yours. It returns to its tier 2 form after 4 rounds of combat and must be upgraded to tier 3 again.</p>
+			
+		</description>
+	</element>
 	
 </elements>
