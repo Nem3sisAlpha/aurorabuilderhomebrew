@@ -105,7 +105,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Tinkering" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_TINKERING">
+	<element name="Tinkering" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_TINKERING">
 		<description>
 			<p>A Tinkerer can use their action to create a mechanical device. Each device has a different effect and tinker point cost:</p>
 			<h5 class="caption">Flash Bang: <i>(1 tinker point, 1lbs Material)</i></h5>
@@ -120,7 +120,7 @@
 			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
 		</description>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_TINKERING" level="1"/>
+			<grant type="Class Feature" id="IDHB_CLASS_FEATURE_TINKERING" level="1"/>
 		</rules>
 		<sheet action="Bonus Action">
 			<description>You have {{tinker-points}} Tinker Points that you can use to create objects, weapons or constructs that could affect an entire encounter</description>
