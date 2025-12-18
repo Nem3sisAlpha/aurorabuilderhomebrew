@@ -69,10 +69,15 @@
 			</table>
 			<div element="ID_HB_CLASS_FEATURE_TINKERING" />
 			<div element="ID_HB_CLASS_FEATURE_SPECIALIZATION" />
+			<div element="ID_HB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER">
 			<div element="ID_HB_CLASS_FEATURE_INSPIREGENIALITY" />
 			<div element="ID_HB_CLASS_FEATURE_PRACTICALIMPROV" />
 			<div element="ID_HB_CLASS_FEATURE_UNCOMMONKNOW" />
 			<div element="ID_HB_CLASS_FEATURE_CREATECONTRAP" />
+			<div element="ID_HB_CLASS_FEATURE_EDUCATEDGUESS" />
+			<div element="ID_HB_CLASS_FEATURE_SHAREKNOW" />
+			<div element="ID_HB_CLASS_FEATURE_DISMANTLE" />
+
 			
 		</description>
 		<sheet display="false">
@@ -88,9 +93,15 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB_MULTICLASS_TINKERER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_TINKERER"/>
 			<select type="Proficiency" name="Skill Proficiency (Tinkerer)" supports="Skill,Tinkerer" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_TINKERER"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_TINKERING" level="1"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SPECIALIZATION" level="3"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER" level="4"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_TINKERING" level="1"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_UNCOMMONKNOW" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CREATECONTRAP" level="3"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_SPECIALIZATION" level="3"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_PRACTICALIMPROV" level="4"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER" level="4"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_EDUCATEDGUESS" level="5"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_SHAREKNOW" level="6"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DISMANTLE" level="7"/>
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_TINKERER">
 			<prerequisite>Intelligence 13</prerequisite>
@@ -120,7 +131,7 @@
 			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
 		</description>
 		<rules>
-			<grant type="Class Feature" id="IDHB_CLASS_FEATURE_TINKERING" level="1"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_TINKERING" level="1"/>
 		</rules>
 		<sheet action="Bonus Action">
 			<description>You have {{tinker-points}} Tinker Points that you can use to create objects, weapons or constructs that could affect an entire encounter</description>
@@ -141,9 +152,6 @@
 			<h5 class="caption">Moment of Geniality:</h5>
 			<p>You can give yourself and others an extra d4 in any ability check, saving throw or attack roll. You can use this feature a number of times equal to half your level in this class, and regain your uses after completing either a short or long rest. The Inspire geniality die grows to a d6 at the 5th level, a d8 at the 11th level, and a d10 at the 17th level.</p>
 		</description>
-		<rules>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_INSPIREGENIALITY" level="1"/>
-		</rules>
 	</element>
 	
 	<element name="Practical Improvisation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_PRACTICALIMPROV">
@@ -152,9 +160,6 @@
 			<p>when reaching level 2, A Tinkerer can turn anything into a deadly weapon using their wits and creative prowess. You gain proficiency with all improvised weapons for 1 hour and can add half of your proficiency bonus (rounded down) to any ability check or saving throw once every short or long rest. The player must use this ability before they know if the roll succeeds or fails. At full potential, a tinkerer may use their Intelligence modifier for attack rolls made with improvised weapons. They can also use this to gain proficiency with improvised tools (improvising a lockpick out of a toothpick etc).</p>
 
 		</description>
-		<rules>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_PRACTICALIMPROV" level="2"/>
-		</rules>
 	</element>
 	
 	<element name="Uncommon Knowledge" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_UNCOMMONKNOW">
@@ -163,9 +168,6 @@
 			<p>At 2nd level, A Tinkerer has spent years experimenting and researching, they know many weird and wonderful things. You can add half your proficiency bonus to a skill check that uses Intelligence. Lasts one hour and does not stack upon itself.</p>
 
 		</description>
-		<rules>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_UNCOMMONKNOW" level="2"/>
-		</rules>
 	</element>
 	
 	<element name="Create Contraption" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CREATECONTRAP">
@@ -174,23 +176,20 @@
 			<p>At 3rd level, You create a small, handheld contraption with a range of 60 feet with a random effect decided by a d8 roll. The DC for all saves is determined by your Intelligence. The contraption can be cobbled together or pre-built. It takes an action to cobble together a contraption and a bonus action to throw it.</p>
 
 		</description>
-		<rules>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CREATECONTRAP" level="2"/>
-		</rules>
 	</element>
 	<table class="class-features_roll">
-				<thead>
-					<tr><td class="col-5">Roll</td><td class="left">Features</td></tr>
-				</thead>
-				<tr><td> 1 </td><td class="left">Tinkering, Inspire Geniality, Brainstormc</td></tr>
-				<tr><td> 2 </td><td class="left">Practical Improvisation, Uncommon Knowledge</td></tr>
-				<tr><td> 3 </td><td class="left">Create Contraption, Specialization, Learn Arcane</td></tr>
-				<tr><td> 4 </td><td class="left">Ability Score Improvement, Enchant Tier 0 (lesser)</td></tr>
-				<tr><td> 5 </td><td class="left">Enchant Tier 0 (full), Educated Guess</td></tr>
-				<tr><td> 6 </td><td class="left">Share Knowledge, Enchant Tier 1 (lesser)</td></tr>
-				<tr><td> 7 </td><td class="left">Dismantle, Enchant Tier 1 (full)</td></tr>
-				<tr><td> 8 </td><td class="left">Ability Score Improvement, Construct Tier 1</td></tr>
-			</table>
+			<thead>
+				<tr><td class="col-5">Roll</td><td class="left">Features</td></tr>
+			</thead>
+			<tr><td> 1 </td><td class="left">Tinkering, Inspire Geniality, Brainstormc</td></tr>
+			<tr><td> 2 </td><td class="left">Practical Improvisation, Uncommon Knowledge</td></tr>
+			<tr><td> 3 </td><td class="left">Create Contraption, Specialization, Learn Arcane</td></tr>
+			<tr><td> 4 </td><td class="left">Ability Score Improvement, Enchant Tier 0 (lesser)</td></tr>
+			<tr><td> 5 </td><td class="left">Enchant Tier 0 (full), Educated Guess</td></tr>
+			<tr><td> 6 </td><td class="left">Share Knowledge, Enchant Tier 1 (lesser)</td></tr>
+			<tr><td> 7 </td><td class="left">Dismantle, Enchant Tier 1 (full)</td></tr>
+			<tr><td> 8 </td><td class="left">Ability Score Improvement, Construct Tier 1</td></tr>
+		</table>
 
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_HB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER">
 		<compendium display="false" />
@@ -207,6 +206,41 @@
 			<select type="Class Feature" name="Improvement Option (Tinkerer 16)" supports="Improvement Option,Tinkerer,16" level="16" />
 			<select type="Class Feature" name="Improvement Option (Tinkerer 19)" supports="Improvement Option,Tinkerer,19" level="19" />
 		</rules>
+	</element>
+
+	<element name="Educated Guess" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_EDUCATEDGUESS">
+		<description>
+			<p>(3 tinker points)</p> <br/>
+			<p>At 5th level, A Tinkerer may sense when they are making something poorly and can make an attempt to find their fault and correct it.</p>
+			<p>Re-roll a contraption roll. You must use the new roll.</p>
+
+		</description>
+		<sheet>
+			<description>At 5th level, A Tinkerer may sense when they are making something poorly and can make an attempt to find their fault and correct it. Re-roll a contraption roll. You must use the new roll.</description>
+		</sheet>
+	</element>
+	
+	<element name="Share Knowledge" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_SHAREKNOW">
+		<description>
+			<p>(3 tinker points)</p> <br/>
+			<p>At level 6, A Tinkerer may not be able to use magic directly, but they can assist those that can.</p>
+			<p>Using a piece of parchment, you inscribe a spell that you know onto a scroll during a short or long rest. This scroll retains its power for up to 1d4 days and can be used by anyone able to read it. You can expend additional tinker points to add days to its life span for 1 point per day.</p>
+
+		</description>
+		<sheet>
+			<description>At level 6, A Tinkerer may not be able to use magic directly, but they can assist those that can. Using a piece of parchment, you inscribe a spell that you know onto a scroll during a short or long rest. This scroll retains its power for up to 1d4 days and can be used by anyone able to read it. You can expend additional tinker points to add days to its life span for 1 point per day.</description>
+		</sheet>
+	</element>
+	
+	<element name="Dismantle" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DISMANTLE">
+		<description>
+			<p>(2-16 tinker points)</p> <br/>
+			<p>when reaching level 7, Using your knowledge of machines, you can take an action to interact with a trap, lock (2 tinker points), or construct (tinker points = 2 for Tiny, 4 for Small, 8 for Medium, 16 for Large) within 5ft of you. Constructs take a wisdom saving throw against your Intelligence, with an advantage. On a failure, the construct is destroyed, falling to pieces under your hand. On a success, deal 1d6 x tinkerer level damage to the construct. If you are attempting to dismantle a lock or a trap, you must make an Intelligence check based on GM discretion. At full potential, Constructs don’t have an advantage or you have an advantage on the Intelligence check.</p>
+
+		</description>
+		<sheet>
+			<description>when reaching level 7, Using your knowledge of machines, you can take an action to interact with a trap, lock (2 tinker points), or construct (tinker points = 2 for Tiny, 4 for Small, 8 for Medium, 16 for Large) within 5ft of you. Constructs take a wisdom saving throw against your Intelligence, with an advantage. On a failure, the construct is destroyed, falling to pieces under your hand. On a success, deal 1d6 x tinkerer level damage to the construct. If you are attempting to dismantle a lock or a trap, you must make an Intelligence check based on GM discretion. At full potential, Constructs don’t have an advantage or you have an advantage on the Intelligence check.</description>
+		</sheet>
 	</element>
 
 	<element name="Specialization" type="Class Feature" source="Homebrewed" id="ID_HB_CLASS_FEATURE_SPECIALIZATION">
