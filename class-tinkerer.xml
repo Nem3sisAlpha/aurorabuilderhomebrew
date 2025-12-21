@@ -137,7 +137,7 @@
 			<description>You have {{tinker-points}} Tinker Points that you can use to create objects, weapons or constructs that could affect an entire encounter</description>
 		</sheet>
 		<rules>
-			<stat name="tinker-points" value="table:class-features.tbody.tr[level()+1].td:nth-child(3)" />
+			<stat name="tinker-points" value="table:class-features.tbody.tr[level()].td:nth-child(3)" />
 		</rules>
 	</element>
 	
