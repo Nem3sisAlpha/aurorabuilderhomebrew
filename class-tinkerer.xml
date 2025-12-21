@@ -118,33 +118,40 @@
 	</element>
 	
 	<elements>
-	  <element name="Arcana" type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="Arcana" type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 
-	  <element name="History" type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="History" type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 
-	  <element name="Religion" type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="Religion" type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 
-	  <element name="Nature" type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="Nature" type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 
-	  <element name="Investigation" type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="Investigation" type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 
-	  <element name="Insight" type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="Insight" type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 
-	  <element name="Survival" type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL">
-		<supports>Tinkerer</supports>
-	  </element>
+		<element name="Survival" type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL">
+			<supports>Skill</supports>
+			<supports>Tinkerer</supports>
+		</element>
 	</elements>
 	
 	<element name="Tinkering" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_TINKERING">
