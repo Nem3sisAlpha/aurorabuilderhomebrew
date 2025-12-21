@@ -42,10 +42,11 @@
 				<li>10 lbs of material (metal) &amp; 15 blank pieces of parchment</li>
 			</ul>
 			<h5 class="caption">THE TINKERER</h5>
-			<table class="class-features">
+			<table id="class-features" class="class-features">
 				<thead>
 					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-10">Tinker Points</td><td class="left">Features</td></tr>
 				</thead>
+				<tbody>
 				<tr><td> 1st</td><td>+2</td><td>8</td><td class="left">Tinkering, Inspire Geniality, Brainstorm</td></tr>
 				<tr><td> 2nd</td><td>+2</td><td>10</td><td class="left">Practical Improvisation, Uncommon Knowledge</td></tr>
 				<tr><td> 3rd</td><td>+2</td><td>12</td><td class="left">Create Contraption, Specialization, Learn Arcane</td></tr>
@@ -66,6 +67,7 @@
 				<tr><td>18th</td><td>+6</td><td>24</td><td class="left">Enchant Tier 5 (lesser)</td></tr>
 				<tr><td>19th</td><td>+6</td><td>24</td><td class="left">Ability Score Improvement, Imitation (Masterful)</td></tr>
 				<tr><td>20th</td><td>+6</td><td>25</td><td class="left">Enchant Tier 5 (full)</td></tr>
+				</tbody>
 			</table>
 			<div element="ID_HB_CLASS_FEATURE_TINKERING" />
 			<div element="ID_HB_CLASS_FEATURE_SPECIALIZATION" />
@@ -135,7 +137,7 @@
 			<description>You have {{tinker-points}} Tinker Points that you can use to create objects, weapons or constructs that could affect an entire encounter</description>
 		</sheet>
 		<rules>
-			<stat name="tinker-points" value="table:class-features.tr[level()+1].td:nth-child(3)" />
+			<stat name="tinker-points" value="table:class-features.tbody.tr[level()+1].td:nth-child(3)" />
 		</rules>
 	</element>
 	
