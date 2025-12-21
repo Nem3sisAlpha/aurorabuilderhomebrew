@@ -175,21 +175,23 @@
 			<p>(5 tinker points, 2lbs Material)</p> <br/>
 			<p>At 3rd level, You create a small, handheld contraption with a range of 60 feet with a random effect decided by a d8 roll. The DC for all saves is determined by your Intelligence. The contraption can be cobbled together or pre-built. It takes an action to cobble together a contraption and a bonus action to throw it.</p>
 
-		</description>
-	</element>
-	<table class="class-features_roll">
+			<table class="class-features_roll">
 			<thead>
 				<tr><td class="col-5">Roll</td><td class="left">Features</td></tr>
 			</thead>
-			<tr><td> 1 </td><td class="left">Tinkering, Inspire Geniality, Brainstormc</td></tr>
-			<tr><td> 2 </td><td class="left">Practical Improvisation, Uncommon Knowledge</td></tr>
-			<tr><td> 3 </td><td class="left">Create Contraption, Specialization, Learn Arcane</td></tr>
-			<tr><td> 4 </td><td class="left">Ability Score Improvement, Enchant Tier 0 (lesser)</td></tr>
-			<tr><td> 5 </td><td class="left">Enchant Tier 0 (full), Educated Guess</td></tr>
-			<tr><td> 6 </td><td class="left">Share Knowledge, Enchant Tier 1 (lesser)</td></tr>
-			<tr><td> 7 </td><td class="left">Dismantle, Enchant Tier 1 (full)</td></tr>
-			<tr><td> 8 </td><td class="left">Ability Score Improvement, Construct Tier 1</td></tr>
-		</table>
+				<tr><td> 1 </td><td class="left">Tinkering, Inspire Geniality, Brainstormc</td></tr>
+				<tr><td> 2 </td><td class="left">Practical Improvisation, Uncommon Knowledge</td></tr>
+				<tr><td> 3 </td><td class="left">Create Contraption, Specialization, Learn Arcane</td></tr>
+				<tr><td> 4 </td><td class="left">Ability Score Improvement, Enchant Tier 0 (lesser)</td></tr>
+				<tr><td> 5 </td><td class="left">Enchant Tier 0 (full), Educated Guess</td></tr>
+				<tr><td> 6 </td><td class="left">Share Knowledge, Enchant Tier 1 (lesser)</td></tr>
+				<tr><td> 7 </td><td class="left">Dismantle, Enchant Tier 1 (full)</td></tr>
+				<tr><td> 8 </td><td class="left">Ability Score Improvement, Construct Tier 1</td></tr>
+			</table>
+			
+		</description>
+	</element>
+	
 
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_HB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_TINKERER">
 		<compendium display="false" />
