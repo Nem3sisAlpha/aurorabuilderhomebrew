@@ -248,11 +248,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Special Expertise" name="Specialization" supports="Specialization" level="3" />
+			<select type="Archetype" name="Specialization" supports="Specialization" level="3" />
 		</rules>
 	</element>
 	
-	<element name="Enchanter" type="Special Expertise" source="Hombrewed" id="ID_HB_SPECIALIZATION_ENCHANTER">
+	<element name="Enchanter" type="Archetype" source="Hombrewed" id="ID_HB_SPECIALIZATION_ENCHANTER">
 		<supports>Specialization</supports>
 		<description>
 			<p>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.</p>
@@ -320,7 +320,7 @@
 	</element>
 	
 	
-	<element name="Engineer" type="Special Expertise" source="Hombrewed" id="ID_HB_SPECIALIZATION_ENGINEER">
+	<element name="Engineer" type="Archetype" source="Hombrewed" id="ID_HB_SPECIALIZATION_ENGINEER">
 		<supports>Specialization</supports>
 		<description>
 			<p>You enjoy and have the talent for creating odd and intricate items</p>
