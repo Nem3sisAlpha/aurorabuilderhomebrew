@@ -92,7 +92,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_TINKERER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB_MULTICLASS_TINKERER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_TINKERER"/>
-			<select type="Proficiency" name="Skill Proficiency (Tinkerer)" supports="Skill,Tinkerer" number="2"/>
+			<select type="Proficiency" name="Skill Proficiency (Tinkerer)" supports="Skill" number="2"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_TINKERING" level="1"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_UNCOMMONKNOW" level="2"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CREATECONTRAP" level="3"/>
@@ -116,42 +116,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<elements>
-		<element name="Arcana" type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
 
-		<element name="History" type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
-
-		<element name="Religion" type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
-
-		<element name="Nature" type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
-
-		<element name="Investigation" type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
-
-		<element name="Insight" type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
-
-		<element name="Survival" type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL">
-			<supports>Skill</supports>
-			<supports>Tinkerer</supports>
-		</element>
-		</elements>
 	<element name="Tinkering" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_TINKERING">
 		<description>
 			<p>A Tinkerer can use their action to create a mechanical device. Each device has a different effect and tinker point cost:</p>
