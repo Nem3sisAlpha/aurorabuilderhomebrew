@@ -119,7 +119,7 @@
 	
 	<elements>
 	  <element name="Arcana" type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA">
-		<supports>Tinkerer/supports>
+		<supports>Tinkerer</supports>
 	  </element>
 
 	  <element name="History" type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY">
@@ -135,7 +135,7 @@
 	  </element>
 
 	  <element name="Investigation" type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION">
-		<supports>Tinkerer/supports>
+		<supports>Tinkerer</supports>
 	  </element>
 
 	  <element name="Insight" type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT">
@@ -143,7 +143,7 @@
 	  </element>
 
 	  <element name="Survival" type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL">
-		<supports>Tinkerer/supports>
+		<supports>Tinkerer</supports>
 	  </element>
 	</elements>
 	
