@@ -1,0 +1,72 @@
+<elements>
+	<info>
+		<name>Homebrewed Deities</name>
+		<description>Deities that are hombrewed</description>
+		<author>Xavier Briand</author>
+		<update version="1.0">
+			<file name="deities-homebrewed.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/deities.xml" />
+		</update>
+	</info>
+	<element name="The Usurpers" type="Deity" source="Hombrewed" id="ID_HB_DEITY_THEUSURPERS">
+		<description>
+			<p class="flavor">Children of Asmodeus</p>
+		</description>
+		<setters>
+			<set name="setting">Veranthia</set>
+			<set name="alignment">CE</set>
+			<set name="domains">Souls, Oblivion, Fate, Unknown, Nothingness</set>
+			<set name="symbol">3 "U" shapes that fit within one another</set>
+			<set name="gender">female and male</set>
+		</setters>
+		<sheet>
+			<description>Children of Asmodeus</description>
+		</sheet>
+	</element>
+	
+	<element name="Lethyria" type="Deity" source="Hombrewed" id="ID_HB_DEITY_LETHYRIA">
+		<description>
+			<p class="flavor">Goddess of Souls and Oblivion</p>
+		</description>
+		<setters>
+			<set name="setting">Veranthia</set>
+			<set name="alignment">CE</set>
+			<set name="domains">Souls, Oblivion</set>
+			<set name="symbol">Purple colored ectoplasmic shapes</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Goddess of Souls and Oblivion</description>
+		</sheet>
+	</element>
+	
+	<element name="Omenos" type="Deity" source="Hombrewed" id="ID_HB_DEITY_OMENOS">
+		<description>
+			<p class="flavor">God of Fate</p>
+		</description>
+		<setters>
+			<set name="setting">Veranthia</set>
+			<set name="alignment">CE</set>
+			<set name="domains">Fate</set>
+			<set name="symbol">Spherical shape made of many threads</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>God of Fate</description>
+		</sheet>
+	</element>
+	
+	<element name="Xaedhros" type="Deity" source="Hombrewed" id="ID_HB_DEITY_XAEDHROS">
+		<description>God of the Unknown and Nothingness</p>
+		</description>
+		<setters>
+			<set name="setting">Veranthia</set>
+			<set name="alignment">CE</set>
+			<set name="domains">Unknown, Nothingness</set>
+			<set name="symbol">Pendant that looks empty made of an unknown/uncommon material</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>God of the Unknown and Nothingness</description>
+		</sheet>
+	</element>
+</elements>
