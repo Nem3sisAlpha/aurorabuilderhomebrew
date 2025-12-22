@@ -4,7 +4,7 @@
 		<description>Deities that are hombrewed</description>
 		<author>Xavier Briand</author>
 		<update version="1.0">
-			<file name="deities-homebrewed.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/deities.xml" />
+			<file name="deities-homebrewed.xml" url="https://raw.githubusercontent.com/Nem3sisAlpha/aurorabuilderhomebrew/refs/heads/main/deities-homebrewed.xml" />
 		</update>
 	</info>
 	<element name="The Usurpers" type="Deity" source="Hombrewed" id="ID_HB_DEITY_THEUSURPERS">
