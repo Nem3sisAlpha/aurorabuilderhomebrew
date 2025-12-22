@@ -56,7 +56,8 @@
 	</element>
 	
 	<element name="Xaedhros" type="Deity" source="Hombrewed" id="ID_HB_DEITY_XAEDHROS">
-		<description>God of the Unknown and Nothingness</p>
+		<description>
+			<p class="flavor">God of the Unknown and Nothingness</p>
 		</description>
 		<setters>
 			<set name="setting">Veranthia</set>
